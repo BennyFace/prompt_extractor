@@ -17,7 +17,7 @@ input_dir = args.input_dir
 output_file = args.text_file_name
 
 def main():
-    with open(output_file, "a") as f:
+    with open(output_file, "a", encoding='utf-8') as f:
         for filename in os.listdir(input_dir):
             # Check if the file is a PNG file
             if filename.endswith(".png"):
